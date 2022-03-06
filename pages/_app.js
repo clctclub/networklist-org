@@ -35,7 +35,7 @@ function MyApp({ Component, pageProps }) {
     stores.dispatcher.dispatch({ type: CONFIGURE })
   },[]);
 
-  const [shutdownNoticeOpen, setShutdownNoticeOpen] = useState(true);
+  const [shutdownNoticeOpen, setShutdownNoticeOpen] = useState(false);
   const closeShutdown = () => {
     setShutdownNoticeOpen(false)
   }
@@ -45,9 +45,6 @@ function MyApp({ Component, pageProps }) {
       <CssBaseline />
       <Component {...pageProps} changeTheme={ changeTheme } />
       <SnackbarController />
-      { shutdownNoticeOpen &&
-        <ShutdownNotice close={ closeShutdown } />
-      }
     </ThemeProvider>
   )
 }

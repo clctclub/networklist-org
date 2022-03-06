@@ -2,6 +2,10 @@
   width: 100%;
   border-radius: 10px;
   padding: 30px;
+  border-radius: 10px !important;
+  box-shadow: 0 7px 7px 0 rgba(0, 0, 0, 0.04) !important;
+  border: solid 2px #535362 !important;
+  background-color: #fff !important;
 }
 
 .addButton {

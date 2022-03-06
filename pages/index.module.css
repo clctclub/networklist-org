@@ -1,6 +1,6 @@
 .container {
   display: grid;
-  grid-template-columns: 700px calc(100vw - 717px);
+  grid-template-columns: 700px calc(100vw - 700px);
   position: relative;
   box-sizing: border-box;
 }
@@ -22,10 +22,26 @@
   min-height: 100vh;
   height: fit-content;
   top: 0;
+  background-color: #07070c;
 }
 
 .copyCentered {
   width: 425px;
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  gap: 96px;
+}
+.copyPart {
+  width: 100%;
+}
+.subTitle {
+  color: #fff;
+  line-height: 1.7;
+  font-family: 'Space Grotesk';
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 
 .headerContainer {
@@ -37,7 +53,7 @@
   padding-top: 24px;
   position: sticky;
   top: 0;
-  background: linear-gradient(rgba(243, 243, 243, 1) 90%, rgba(243, 243, 243, 0) 100%);
+  /* background: linear-gradient(rgba(243, 243, 243, 1) 90%, rgba(243, 243, 243, 0) 100%); */
   padding: 24px 80px 48px 80px;
   z-index: 1;
 }
@@ -60,7 +76,7 @@
   min-height: 100vh;
   width: 100%;
   align-items: flex-start;
-  background: #f3f3f3;
+  background: #c6cbd9;
   padding: 0px 24px 24px;
 }
 
@@ -85,7 +101,7 @@
 }
 
 .helpingUnderline {
-  color: #2f80ed;
+  color: #ffffff;
 }
 
 .helpingParagraph {
@@ -94,8 +110,13 @@
 }
 
 .addNetworkButton {
-  margin-top: 50px !important;
-  width: fit-content;
+  margin-top: 20px !important;
+  width: auto !important;
+  height: auto !important;
+  background-color: #3dd598 !important;
+  border-radius: 50px !important;
+  padding: 8px 20px !important;
+  color: #000 !important;
 }
 
 .filterRow {
@@ -104,6 +125,10 @@
   justify-content: flex-end;
   width: 100%;
   flex: 1;
+  height: 42px;
+  border-radius: 10px !important;
+  box-shadow: 0 7px 7px 0 rgba(0, 0, 0, 0.04) !important;
+  background-color: #f2f3f7 !important;
 }
 
 .searchContainer {
@@ -111,10 +136,11 @@
 }
 
 .socials {
-  margin-top: 50px;
+  /* margin-top: 20px; */
 }
 
 .socialButton {
+  margin-top: 20px;
   display: flex;
   align-items: center;
 }
@@ -125,6 +151,9 @@
 
 .version {
   padding-left: 30px;
+  text-transform: uppercase !important;
+  color: rgba(255, 255, 255, 0.87) !important;
+  white-space: pre-wrap;
 }
 
 .searchPaper {
@@ -133,12 +162,19 @@
 
 .searchInputAdnornment {
   font-size: 14px !important;
-  font-weight: bold !important;
+  font-weight: 500 !important;
+  color: rgba(0, 0, 0, 0.87);
+  letter-spacing: normal !important;
 }
 
 .buttonLabel {
-  text-transform: capitalize !important;
-  font-weight: 500 !important;
+  white-space: nowrap;
+  text-transform: uppercase !important;
+  color: #000 !important;
+  letter-spacing: normal !important;
+  font-family: 'Space Grotesk' !important;
+  font-size: 16px !important;
+  font-weight: bold !important; 
 }
 
 .buttonText {
@@ -156,11 +192,11 @@
 
 @media screen and (max-width: 1500px) {
   .container {
-    grid-template-columns: 500px calc(100vw - 517px);
+    grid-template-columns: 500px calc(100vw - 500px);
   }
 
   .containerDark {
-    grid-template-columns: 500px calc(100vw - 517px);
+    grid-template-columns: 500px calc(100vw - 500px);
   }
 
   .headerContainer,
@@ -191,12 +227,16 @@
   }
 
   .copyCentered {
+    padding: 0 160px;
+    flex-direction: row;
+    width: 100%;
     position: static;
     padding-bottom: 0px;
+    /* gap: 96px; */
   }
 
   .listContainer {
-    width: calc(100vw - 17px);
+    width: calc(100vw);
     padding: 0px;
   }
 
@@ -211,7 +251,19 @@
     bottom: 0px;
   }
 }
-
+@media screen and (max-width: 1000px) {
+  .copyContainer {
+    padding: 40px 0px;
+  }
+  .copyCentered {
+    padding: 0 40px;
+    /* width: 425px; */
+    /* display: flex; */
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: unset;
+  }
+}
 @media screen and (max-width: 600px) {
   .copyContainer,
   .socialButton,
@@ -220,7 +272,6 @@
     max-width: 100vw;
   }
   .copyContainer {
-    text-align: center;
   }
   .cardsContainer {
     padding: 0 20px 20px;
@@ -235,9 +286,10 @@
   .subTitle {
     padding: 0 10px;
   }
+  .socials {
+
+  }
   .socialButton {
-    text-align: center;
-    justify-content: center;
   }
   .version {
     padding-left: 0;
@@ -253,6 +305,8 @@
   .headerContainerDark {
     display: flex;
     flex-direction: column-reverse;
+    flex-wrap: wrap;
+    gap: 14px;
     padding: 20px;
   }
 }

@@ -1,4 +1,5 @@
 import { createMuiTheme } from '@material-ui/core/styles';
+import { BlockRounded } from '@material-ui/icons';
 
 export const colors = {
   blue: "#2F80ED",
@@ -22,6 +23,7 @@ const coreTheme = {
   },
   typography: {
     fontFamily: [
+      'Space Grotesk',
       'Inter',
       'Arial',
       '-apple-system',
@@ -36,13 +38,15 @@ const coreTheme = {
     ].join(','),
     h1: {
       fontFamily: [
+        'Syne',
         '"Helvetica Neue"',
         'Inter',
       ],
-      fontSize: '60px',
-      fontWeight: 700,
-      lineHeight: 1.167,
-      letterSpacing: '1px'
+      fontSize: '36px',
+      fontWeight: 800,
+      lineHeight: 1,
+      letterSpacing: '1px',
+      whiteSpace: 'pre-wrap',
     },
     h2: {
       fontSize: '24px',
@@ -51,10 +55,11 @@ const coreTheme = {
     },
     h3: {
       fontFamily: [
-        'Inter',
+        'Space Grotesk',
       ],
       fontSize: '20px',
-      fontWeight: 600
+      fontWeight: 'bold',
+      color: '#000',
     },
     h4: {
       fontSize: '1.5rem',
@@ -63,8 +68,10 @@ const coreTheme = {
     },
     h5: {   // card headers
       fontSize: '15px',
-      fontWeight: 700,
-      lineHeight: 1.167
+      fontWeight: 'bold',
+      lineHeight: 1.17,
+      color: '#000',
+      whiteSpace: 'nowrap',
     },
     h6: {   // card headers
       fontSize: '1.5rem',
@@ -76,9 +83,11 @@ const coreTheme = {
       }
     },
     subtitle1: {
-      fontSize: '14px',
-      fontWeight: 300,
-      lineHeight: 1.167,
+      fontSize: '13px',
+      fontWeight: 500,
+      lineHeight: 1.26,
+      color: '#656575',
+      
       ['@media (max-width:576px)']: { // eslint-disable-line no-useless-computed-key
         fontSize: '0.7rem'
       }
@@ -87,6 +96,8 @@ const coreTheme = {
       fontSize: '16px',
       fontWeight: 500,
       lineHeight: 1.7,
+      color: 'rgba(255, 255, 255, 0.87)',
+      textTransform: 'uppercase',
       ['@media (max-width:576px)']: { // eslint-disable-line no-useless-computed-key
         fontSize: '0.8rem'
       }
@@ -146,6 +157,19 @@ const coreTheme = {
       },
       label: {
         textTransform: 'capitalize'
+      },
+      outlined: {
+        // border: '1px solid #EAEAEA',
+        fontSize: '13px',
+        fontWeight: 'bold',
+        borderRadius: "32px",
+        border: "solid 2px #535362",
+        color: '#535362',
+        padding: '5px 18px',
+        "&:hover": {
+          backgroundColor: colors.blue+' !important',
+          color: '#fff'
+        }
       },
       outlinedPrimary: {
         border: '1px solid #EAEAEA',

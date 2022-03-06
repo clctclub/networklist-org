@@ -127,7 +127,7 @@ function Header(props) {
 
   return (
     <div className={ classes.headerContainer }>
-      { props.backClicked && (
+      {/* { props.backClicked && (
         <div className={ classes.backButton }>
           <Button
           color={ props.theme.palette.type === 'light' ? 'primary' : 'secondary' }
@@ -137,15 +137,15 @@ function Header(props) {
             <ArrowBackIcon fontSize={ 'large' } />
           </Button>
         </div>
-      )}
-      <div className={ classes.themeSelectContainer }>
+      )} */}
+      {/* <div className={ classes.themeSelectContainer }>
         <StyledSwitch
           icon={ <Brightness2Icon className={ classes.switchIcon }/> }
           checkedIcon={ <WbSunnyOutlinedIcon className={ classes.switchIcon }/> }
           checked={ darkMode }
           onChange={ handleToggleChange }
         />
-      </div>
+      </div> */}
       <Button
         disableElevation
         className={ classes.accountButton }
@@ -154,7 +154,7 @@ function Header(props) {
         onClick={ onAddressClicked }
         >
         { account && account.address && <div className={ `${classes.accountIcon} ${classes[renderProviderLogo()]}` }></div>}
-        <Typography variant='h5'>{ (account && account.address)? formatAddress(account.address) : 'Connect Wallet' }</Typography>
+        <Typography variant='h5'>{ (account && account.address)? formatAddress(account.address) : 'CONNECT WALLET' }</Typography>
       </Button>
     </div>
   )

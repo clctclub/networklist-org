@@ -84,7 +84,7 @@ export default function Chain({ chain }) {
       }
       return providerTextList[getProvider()]
     } else {
-      return 'Connect wallet'
+      return 'CONNECT WALLET'
     }
 
   }
@@ -126,8 +126,9 @@ export default function Chain({ chain }) {
       </div>
       <div className={ classes.addButton }>
         <Button
+          style={{height:35}}
           variant='outlined'
-          color='primary'
+          // color='primary'
           onClick={ addToNetwork }
         >
           { renderProviderText() }
