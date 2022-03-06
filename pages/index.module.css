@@ -264,24 +264,15 @@
     gap: unset;
   }
 }
+
 @media screen and (max-width: 600px) {
-  .copyContainer,
-  .socialButton,
-  .version,
-  .socials {
-    max-width: 100vw;
+  .container {
+    width: 100%;
   }
   .copyContainer {
   }
   .cardsContainer {
     padding: 0 20px 20px;
-  }
-  .helpingParagraph {
-    margin: 10px !important;
-    max-width: 100vw;
-  }
-  .copyCentered {
-    max-width: 100vw;
   }
   .subTitle {
     padding: 0 10px;
@@ -299,7 +290,7 @@
   }
   .listContainer,
   .listContainerDark {
-    width: 100vw;
+    width: 100%;
   }
   .headerContainer,
   .headerContainerDark {
@@ -308,5 +299,8 @@
     flex-wrap: wrap;
     gap: 14px;
     padding: 20px;
+  }
+  .searchContainer {
+    margin-right: 0px !important;
   }
 }

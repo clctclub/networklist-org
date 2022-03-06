@@ -55,7 +55,11 @@
 .backButton {
   flex: 1;
 }
-
+@media screen and (max-width: 800px) {
+  .accountButton {
+    margin-left: 40px !important;
+  }
+}
 @media screen and (max-width: 600px) {
   .headerContainer {
     width: 100%;

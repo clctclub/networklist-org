@@ -47,6 +47,9 @@ const coreTheme = {
       lineHeight: 1,
       letterSpacing: '1px',
       whiteSpace: 'pre-wrap',
+      ['@media (max-width:600px)']: { // eslint-disable-line no-useless-computed-key
+        wordBreak: 'break-all',
+      }
     },
     h2: {
       fontSize: '24px',
