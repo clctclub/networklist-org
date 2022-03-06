@@ -170,14 +170,14 @@ const coreTheme = {
         color: '#535362',
         padding: '5px 18px',
         "&:hover": {
-          backgroundColor: colors.blue+' !important',
+          backgroundColor: '#3dd598 !important',
           color: '#fff'
         }
       },
       outlinedPrimary: {
         border: '1px solid #EAEAEA',
         "&:hover": {
-          backgroundColor: colors.blue+' !important',
+          backgroundColor: '#3dd598 !important',
           color: '#fff'
         }
       }
