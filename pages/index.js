@@ -137,7 +137,8 @@ function Home({ changeTheme, theme }) {
           }}
         />
         <title>Chainlist.COOL</title>
-        {/* <link rel="icon" href="/Chainlist-logo.png" /> */}
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
+        <link rel="icon" type="image/png" href="/favicon.png"/>
       </Head>
 
       <main className={styles.main}>
