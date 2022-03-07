@@ -33,7 +33,7 @@ export default class MyDocument extends Document {
           <meta property="og:type" content="website"/>
           <meta property="og:title" content="Chainlist.COOL"/>
           <meta property="og:description" content="One click to connect to all evm networks"/>
-          <meta property="og:image" content="%PUBLIC_URL%/chainlist_og.png"/>
+          <meta property="og:image" content="/chainlist_og.png"/>
 
           {/* <!-- Twitter Meta Tags --> */}
           <meta name="twitter:card" content="summary_large_image"/>
@@ -41,7 +41,7 @@ export default class MyDocument extends Document {
           <meta property="twitter:url" content="https://chainlist.COOL"/>
           <meta name="twitter:title" content="Chainlist.COOL"/>
           <meta name="twitter:description" content="One click to connect to all evm networks"/>
-          <meta name="twitter:image" content="%PUBLIC_URL%/chainlist_og.png"/>
+          <meta name="twitter:image" content="/chainlist_og.png"/>
 
           {/* <!— Meta Tags Generated via https://www.opengraph.xyz —></meta> */}
         </Head>
