@@ -25,6 +25,25 @@ export default class MyDocument extends Document {
     rel="stylesheet"></link>
           {/* <link rel="stylesheet" href="/fonts/Inter/Inter.css" />
           <link rel="stylesheet" href="/fonts/Druk/Druk.css" /> */}
+          {/* <!-- HTML Meta Tags --> */}
+          <meta name="description" content="One click to connect to all evm networks"/>
+
+          {/* <!-- Facebook Meta Tags --> */}
+          <meta property="og:url" content="https://chainlist.COOL"/>
+          <meta property="og:type" content="website"/>
+          <meta property="og:title" content="Chainlist.COOL"/>
+          <meta property="og:description" content="One click to connect to all evm networks"/>
+          <meta property="og:image" content="%PUBLIC_URL%/chainlist_og.png"/>
+
+          {/* <!-- Twitter Meta Tags --> */}
+          <meta name="twitter:card" content="summary_large_image"/>
+          <meta property="twitter:domain" content="chainlist.org"/>
+          <meta property="twitter:url" content="https://chainlist.COOL"/>
+          <meta name="twitter:title" content="Chainlist.COOL"/>
+          <meta name="twitter:description" content="One click to connect to all evm networks"/>
+          <meta name="twitter:image" content="%PUBLIC_URL%/chainlist_og.png"/>
+
+          {/* <!— Meta Tags Generated via https://www.opengraph.xyz —></meta> */}
         </Head>
         <body>
           <Main />
