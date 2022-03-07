@@ -7,7 +7,7 @@
 .accountButton {
   display: flex;
   align-items: center;
-  margin-left: 98px !important;
+  margin-left: 58px !important;
   min-height: 40px;
   width: 250px;
   font-size: 15px;
@@ -55,9 +55,9 @@
 .backButton {
   flex: 1;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
   .accountButton {
-    margin-left: 40px !important;
+    margin-left: 0px !important;
   }
 }
 @media screen and (max-width: 600px) {
